@@ -15,6 +15,7 @@ TEXT_WIDTH = WIDTH - IMAGE_WIDTH - 1
 
 COMPANY_TEXT_SIZE = 0.6
 DETAILS_TEXT_SIZE = 0.5
+DETAILS2_TEXT_SIZE = 0.45
 
 LEFT_PADDING = 5
 NAME_PADDING = 20
@@ -123,7 +124,7 @@ def draw_badge():
     name_length = display.measure_text(detail2_title, DETAILS_TEXT_SIZE)
     display.text(detail2_title, LEFT_PADDING, HEIGHT - (DETAILS_HEIGHT // 2), DETAILS_TEXT_SIZE)
     display.thickness(2)
-    display.text(detail2_text, LEFT_PADDING + name_length + DETAIL_SPACING, HEIGHT - (DETAILS_HEIGHT // 2), DETAILS_TEXT_SIZE)
+    display.text(detail2_text, LEFT_PADDING + name_length + DETAIL_SPACING, HEIGHT - (DETAILS_HEIGHT // 2), DETAILS2_TEXT_SIZE)
 
 
 # ------------------------------
@@ -160,7 +161,7 @@ detail1_text = truncatestring(detail1_text, DETAILS_TEXT_SIZE,
                               TEXT_WIDTH - DETAIL_SPACING - display.measure_text(detail1_title, DETAILS_TEXT_SIZE))
 
 detail2_title = truncatestring(detail2_title, DETAILS_TEXT_SIZE, TEXT_WIDTH)
-detail2_text = truncatestring(detail2_text, DETAILS_TEXT_SIZE,
+detail2_text = truncatestring(detail2_text, DETAILS2_TEXT_SIZE,
                               TEXT_WIDTH - DETAIL_SPACING - display.measure_text(detail2_title, DETAILS_TEXT_SIZE))
 
 
