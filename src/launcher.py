@@ -39,7 +39,7 @@ badger_os.state_load("launcher", state)
 display.invert(state["inverted"])
 
 icons = bytearray(launchericons.data())
-icons_width = 576
+icons_width = 512 # was 576 in the v.1.19.6 release file
 
 examples = [
     ("_clock", 0),
