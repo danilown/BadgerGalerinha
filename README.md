@@ -1,4 +1,4 @@
-# [badger_2040](https://github.com/danilown/badger_2040)
+# [BadgerGalerinha](https://github.com/danilown/BadgerGalerinha)
 
 The easiest way to get started is to go to [Pimoroni's official tutorial](https://learn.pimoroni.com/article/getting-started-with-badger-2040).
 
