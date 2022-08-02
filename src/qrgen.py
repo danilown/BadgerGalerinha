@@ -95,7 +95,7 @@ def draw_qr_file(n):
 
     top = 40
     for line in detail_text:
-        display.text(line, left, top, 0.4)
+        display.text(line, left, top, 0.45)
         top += 10
 
     if TOTAL_CODES > 1:

@@ -1,6 +1,6 @@
-UNESP & RMIT
-Guilherme Camargo
+Itau
+Luis Uzai
 
-PhD Student
+Cientista de Dados
 In
-@camargo-gui
+@luisuzai
