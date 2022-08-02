@@ -12,9 +12,24 @@ This repository contains mostly customized examples from [Pimoroni's Pico reposi
 
 2. Copy the firmware to the Badger as described in the [Firmware section](#Firmware) and in [Pimoroni's official tutorial](https://learn.pimoroni.com/article/getting-started-with-badger-2040).
 
-3. Using [Thonny](https://thonny.org/), copy **all** files and folders from the `/src` folder into the Badger. Select the items one by one while holding CTRL (or Command) and when you've selected all, just click with the right mouse button and select "Upload to /"
+3. Using [Thonny](https://thonny.org/), copy **all** files and folders from the `/src` folder into the Badger. Select the items one by one while holding CTRL (or Command) and when you've selected all, just click with the right mouse button and select "Upload to /".
 
 4. Have Fun!
+
+## Customizing the Badger
+
+For the text, you just need to edit the `/badger_data/badge.txt` file and change what you want.
+
+If you want finer control, you can edit the `badge.py` file under the `/src` directory.
+
+> **FYI**: The version running on your Badger was slightly modified.
+
+For the image:
+
+0. The image must be exactly **104 pixels in width and 128 pixels in height**.
+1. Convert your image to the `.bin` format that the Badger can interpret with the command: `python3 convert.py --binary badge-image.png`. You can find this script in the `/utils` folder.
+   > Be sure that you have Pil installed in your environment: `pip3 install pillow`.
+2. Be sure to place the newly generated image in the `/badger_data` folder in the Badger internal storage.
 
 ## Firmware
 
