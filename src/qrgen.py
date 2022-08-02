@@ -87,7 +87,7 @@ def draw_qr_file(n):
     left = top = int((badger2040.HEIGHT / 2) - (size / 2))
     draw_qr_code(left, top, 128, code)
 
-    left = 128 + 5
+    left = 128 + 3
 
     display.thickness(2)
     display.text(title_text, left, 20, 0.5)
