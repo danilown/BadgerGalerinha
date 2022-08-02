@@ -4,6 +4,18 @@ The easiest way to get started is to go to [Pimoroni's official tutorial](https:
 
 This repository contains mostly customized examples from [Pimoroni's Pico repository](https://github.com/pimoroni/pimoroni-pico), which can be found more specifically under `/micropython/examples/badger2040`.
 
+## Select Your Branch
+
+The whole idea of this thing is for everyone to have a unique version of the Badger.
+
+Each customization lives in a branch in this repository, so select yours:
+
+- [Guilherme Camargo de Oliveira](https://github.com/danilown/BadgerGalerinha/tree/gui);
+- [Luis Felipe Bueno da Silva](https://github.com/danilown/BadgerGalerinha/tree/luisin);
+- [Luis Fernando de Oliveira Uzai](https://github.com/danilown/BadgerGalerinha/tree/uzai);
+- [Rodrigo Bueno Rodrigues da Silva de Siqueira](https://github.com/danilown/BadgerGalerinha/tree/diga1);
+- [Vinícius Ferraz](https://github.com/danilown/BadgerGalerinha/tree/vini);
+
 ## Getting Started
 
 0. Install [Thonny](https://thonny.org/) to be able to easily interact with the board.
