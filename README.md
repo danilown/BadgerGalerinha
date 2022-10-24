@@ -43,6 +43,26 @@ For the image:
    > Be sure that you have Pil installed in your environment: `pip3 install pillow`.
 2. Be sure to place the newly generated image in the `/badger_data` folder in the Badger internal storage.
 
+## QR Codes
+
+To generate QR code, you just need to add `.txt` files in the `/src/qrcodes` folder.
+
+This files needs to respect the following format:
+
+1. The First line has to contain the URL that will be converted into QR code;
+2. The Second line is the Title of the QR code, and will be displayed with a bigger font size;
+3. The following lines will be displayed with a smaller font size;
+
+### Wi-Fi Codes
+
+Wi-Fi QR can actually represented as URL's, so we can add Wi-Fi QR codes into our Badger just by following a special URL scheme.
+
+You just need to follow the example provided at `/src/qrcodes/wifi_guest7.txt`.
+
+[Code Pen's Wi-Fi URL scheme generator](https://codepen.io/04/pen/eLWWNd) can generate these URL's simply and easily, you just need to insert the name of the Wi-Fi network and the password.
+
+> **Note**: if you don't know the encryption type, your router is probably using WPA.
+
 ## Firmware
 
 To be able to program the Badger, you'll need the correct version of the micropython interpreter [here](https://github.com/pimoroni/pimoroni-pico/releases).
