@@ -1,0 +1,9 @@
+WIFI:T:WPA;S:Guest 7;P:password;;
+Guest Wifi
+
+SSID:
+Guest 7
+
+Password:
+password
+
