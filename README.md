@@ -1,6 +1,6 @@
 # [BadgerGalerinha](https://github.com/danilown/BadgerGalerinha)
 
-The easiest way to get started is to go to [Pimoroni's official tutorial](https://learn.pimoroni.com/article/getting-started-with-badger-2040).
+The easiest way to get started is to go to [Getting Started](#getting-started) section. For a more detailed explanation, head to [Pimoroni's official tutorial](https://learn.pimoroni.com/article/getting-started-with-badger-2040).
 
 This repository contains mostly customized examples from [Pimoroni's Pico repository](https://github.com/pimoroni/pimoroni-pico), which can be found more specifically under `/micropython/examples/badger2040`.
 
@@ -18,15 +18,37 @@ Each customization lives in a branch in this repository, so select yours:
 
 ## Getting Started
 
+### Tweaking just some small things
+
+0. Install [Thonny](https://thonny.org/) to be able to easily interact with the board.
+
+1. Simply connect the Badger to your computer using an USB-C cable.
+
+2. Open [Thonny](https://thonny.org/), and be sure that the Badger was correctly recognized. You should see something like "Raspberry Pi Pico" of the left panel (like shown in bottom part of Fig.1) and all the files withing the Badger. If that's not the case, try clicking the Stop/Restart backend button and it should appear.
+
+3. Change the files withing the Badger as you want.
+
+### Tinkering a bit more
+
 0. Install [Thonny](https://thonny.org/) to be able to easily interact with the board.
 
 1. Put the Badger into bootloader mode by plugging it into the computer through the USB port while holding down its BOOT button. The Badger will mount as a drive named RPI-RP2 on your computer.
 
-2. Copy the firmware to the Badger as described in the [Firmware section](#Firmware) and in [Pimoroni's official tutorial](https://learn.pimoroni.com/article/getting-started-with-badger-2040).
+> **Note**: Be sure that the Badger has **no external power** (i.e. turn off the battery switch).
 
-3. Using [Thonny](https://thonny.org/), copy **all** files and folders from the `/src` folder into the Badger. Select the items one by one while holding CTRL (or Command) and when you've selected all, just click with the right mouse button and select "Upload to /".
+2. Copy the downloaded firmware (`.uf2` file) to the Badger as described in the [Firmware section](#firmware) and in [Pimoroni's official tutorial](https://learn.pimoroni.com/article/getting-started-with-badger-2040) into the RPI-RP2 mounted volume.
 
-4. Have Fun!
+3. Open [Thonny](https://thonny.org/), and be sure that the Badger was correctly recognized. If you see something like "Raspberry Pi Pico" of the left panel (like shown in bottom part of Fig.1), you are good. If not, try clicking the Stop/Restart backend button and it should appear.
+
+4. You now need to copy **all** files and folders from the `/src` folder into the Badger. To do so, select the items one by one while holding CTRL (or Command) as shown in Fig. 1, and just click with the right mouse button and select "Upload to /", as shown in Fig. 2.
+
+![Selected Files](assets/selected_files.png)
+> Fig. 1: Files that need to be selected in Thonny, shown in light grey.
+
+![Uploading Files](assets/uploading_files.png)
+> Fig. 2: After selecting the files, click on them with the right button of the mouse and select "Upload to /".
+
+5. Have Fun!
 
 ## Customizing the Badger
 
@@ -61,6 +83,8 @@ You just need to follow the example provided at `/src/qrcodes/wifi_guest7.txt`.
 
 [Code Pen's Wi-Fi URL scheme generator](https://codepen.io/04/pen/eLWWNd) can generate these URL's simply and easily, you just need to insert the name of the Wi-Fi network and the password.
 
+**There is no need to scape characters here**!
+
 > **Note**: if you don't know the encryption type, your router is probably using WPA.
 
 ## Firmware
@@ -69,7 +93,11 @@ To be able to program the Badger, you'll need the correct version of the micropy
 
 > the release being used in this repository is [v1.19.6](https://github.com/pimoroni/pimoroni-pico/releases/tag/v1.19.6).
 
-Note that you have to choose the correct build for the Badge. The naming schema seems to not be fixed yet, but you should choose the one that looks something like `pimoroni-badger2040-v1.19.6-micropython.uf2`.
+Note that you have to choose the correct build for the Badge. The naming schema seems to not be fixed yet, but you should choose the one that looks something like `pimoroni-badger2040-v1.19.6-micropython-without-badger-os.uf2`.
+
+This interpreter does not contain the extra files from Pimoroni, because everything you need is (technically) already in this repository.
+
+If you want, you can use the version with Badger OS (`pimoroni-badger2040-v1.19.6-micropython.uf2`) as well and do the customizations yourself.
 
 ## Badger API
 
